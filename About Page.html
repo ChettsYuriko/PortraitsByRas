@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about_styles.css">
+    <title>About - Portraits by RAS Digital</title>
+</head>
+<body>
+
+
+  <div class="main-row">
+
+    <nav class="navbar">
+    <img src="PORTRAITS LOGO.png" alt="RAS Logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Page.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="fitting-image">
+  <img class="fitting-image"
+  src="Camera.jpg"
+  alt="Original Image"/>
+</div>
+
+<div class = "rectangle">
+</div>
+
+<div class = "About-Us">
+<h1> About Us</h1>
+<p> Portraits by RAS Digital is a photography studio that specializes in capturing personalities <br>
+  and memories through creative portraits.  </p>
+</div>
+
+
+<div class="container">  
+  <section class="Information">
+        <div>
+        <h2>Fiona Salvador | Owner</h2> <br>
+            <p>
+            With her vast experience from working at RAS <br>
+            Digital — their family business of a photo and <br>
+            video coverage team for events — and <br>
+            individual freelance projects, she was able to <br>
+            build a diverse portfolio and this creative space. 
+          </p>
+      </div>
+        
+      <div class = "Photos">
+        <img src="Picture 1.jpg" alt=""class="framed-image">
+      </div> 
+
+  </section>
+</div>
+
+  <div class = "Row">
+    <div class="Column">
+    <img src="Picture 2.jpg" alt="" class="framed-image">
+      </div>
+    <div class="Column">
+    <img src="Picture 3.jpg" alt="" class="framed-image">
+      </div>
+  <div class="Column">
+  <img src="Picture 4.jpg" alt="" class="framed-image">
+    </div>
+  </div>
+
+  <p> With our dedicated team, Portraits by RAS Digital is committed to capturing the <br>
+    unique personalities of each of our clients. We guarantee that every photoshoot will <br>
+    be a fun and special experience for you.  </p>
+
+  <div class = vision-mission>
+    <div class = mission>
+      <h2>Mission</h2>
+      <p>We commit to craft timeless portraits that capture the unique<br>
+        essence of each individual.
+      </p>
+    </div>
+    <div class = vision>
+      <h2>Vision</h2>
+      <p>To pioneer the future of creative portraitures, setting <br>
+        new standards in the industry</p>
+    </div>
+    <div class = team>
+      <h2>TEAM</h2>
+      <P>Fiona Salvador: CEO, Main Photographer <br>
+        Ruben Salvador: Co-CEO, Assitant Photographer <br>
+        Benj Salvador: Assistant Photographer <br>
+        Imelda Salvador: Advertising Manager
+      </P>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="Portraits footer.png" alt="Footer Logo">
+     </div>
+     <div class="footer-actions">
+      <div class="action">
+        <img src="ico1.png" alt="Facebook">
+      </div>
+      <div class="action">
+        <img src="ico2.png" alt="Instagram">
+      </div>
+      <div class="action">
+        <img src="ico3.png" alt="Telephone Number">
+      </div>
+      <div class="action">
+        <img src="ico4.png" alt="Email">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+$('.fa-bars').click(function(){
+  $(this).toggleClass('fa-times');
+  $('nav').toggleClass('nav-toggle');
+});
+
+$(window).on('scroll load',function(){
+  $('.fa-bars').removeClass('fa-times');
+  $('nav').removeClass('nav-toggle');
+});
+
+$('.count').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+  {
+    duration: 5000,
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum + '+');
+    }
+  });
+});
+
+$('.project').magnificPopup({
+  delegate:'a',
+  type:'image',
+  gallery:{
+    enabled:true
+  }
+});
+
+});
+  </script>

@@ -1,0 +1,223 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+
+ body p {
+    font-family: 'Montserrat-SemiBold', sans-serif; 
+    color: black;
+    font-size: 20px;
+    padding-top: 10px;
+    line-height: 1.5;
+    padding-bottom: 30 px;
+    text-align: center;
+    word-spacing: 5px;
+    letter-spacing: 0.5px;
+  }
+
+  body {
+    background-color: #f8d4bc; 
+  }
+  
+  .main-row {
+    background-color: #708ca4; 
+    padding: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-family: 'Montserrat SemiBold', sans-serif;
+  }
+  
+  .logo {
+    width: 300px; 
+  }
+  
+  .social-icons img {
+    width: 30px;
+    margin-left: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+    .fitting-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .rectangle {
+    width: 100%;
+    height: 80px;
+    background-color: #708ca4; 
+  }
+  
+  .About-Us {
+    font-family: 'Montserrat-SemiBold', sans-serif; 
+    font-size: 50px;
+    text-align: center;
+    color: #546464;
+    padding-top: 45px;
+  }
+
+  .About-Us p{
+    color: black;
+    font-size: 20px;
+    padding-top: 10px;
+    line-height: 1.5;
+    padding-bottom: 30 px;
+    word-spacing: 5px;
+    letter-spacing: 0.5px;
+  }
+
+  .container {
+    margin: 20px auto;
+    font-family: 'Montserrat-SemiBold', sans-serif; 
+    scale: 100%;
+  }
+  
+  .Information {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .container h2{
+    font-size: 40px;
+    color: #546464;
+  }
+  
+  .container p{
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top: 0;
+    text-align: left;
+    word-spacing: 5px;
+    letter-spacing: 0.5px;
+  }
+
+  .Photos {
+    padding-left: 60px;
+    width: 350px; /* Set the width of the container */
+    height: 500px; /* Set the height of the container */
+    overflow: hidden;
+  
+  }
+  
+  .Photos img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    scale: 80%;
+
+  }
+
+  .Row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Column {
+	  float: left;
+	  width: 17%;
+    scale: 100%;
+    padding: 50px;
+  	}
+
+	.Column img {
+	  width: 95%;
+	}
+
+  .framed-image {
+    border: 5px solid #546464; /* Adjust the border width and color as needed */
+    padding: 5px; /* Adjust padding to control the space between image and border */
+  }
+
+  .vision-mission p{
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top: 0;
+    word-spacing: 5px;
+    letter-spacing: 0.5px;
+  }
+
+  .vision-mission h2{
+    font-family: 'Montserrat-SemiBold', sans-serif; 
+    font-size: 40px;
+    color: #546464;
+  }
+
+  .mission p, .mission h2{
+    text-align: left;
+    padding-bottom: 5px;
+  }
+
+  .vision p, .vision h2{
+    text-align: right;
+    padding-bottom: 5px;
+  }
+
+  .team p, .team h2{
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  .vision-mission{
+    margin: 10%;
+    margin-top: 7%;
+    margin-bottom: 0;
+  }
+
+  .mission, .vision, .team{
+    padding-bottom: 6%;
+  }
+
+  .footer {
+    background-color: #708ca4; 
+    padding: 20px;
+    color: #fff; 
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-logo img {
+    width: 340px; 
+    height: auto; 
+  }
+  
+  .footer-actions {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .action {
+    margin-bottom: 5px; 
+  }
+  
+  .action img {
+    width: 200px; 
+    height: auto; 
+  }

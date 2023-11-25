@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexstyles.css">
+    <title>Your Website</title>
+</head>
+<body>
+
+
+  <div class="main-row">
+
+    <nav class="navbar">
+    <img src="PORTRAITS LOGO.png" alt="RAS Logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Page.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="second-row">
+    <div class="photo-gallery">
+      <img src="photo1.jpg" alt="Photo 1">
+      <img src="photo2.jpg" alt="Photo 2">
+      <img src="photo3.jpg" alt="Photo 3">
+      <img src="photo4.jpg" alt="Photo 4">
+      <img src="photo5.jpg" alt="Photo 5">
+    </div>
+
+    <div class="book-now">
+        <img src="Book Now.png" width = "240px" alt ="Book Now" class="animated-button">
+      </div>
+  </div>
+
+  
+  <div class="third-row">
+    <p class="tagline">
+      <span class="montserrat">CAPTURING</span><span style="color: #EFD5BD;"> personalities</span> and <span style="color: #EFD5BD;">memories</span> through creative portraits
+    </p>
+  </div>
+
+   
+   <div class="fourth-row">
+    <img src="studiscount.gif" alt="Picture 1" class="picture">
+    <img src="STUDENT PROMO.png" alt="Picture 2" class="picture">
+  </div>
+
+
+  <div class="fifth-row">
+    <h2 class="packages-title">PACKAGES</h2>
+  </div>
+
+  <div class="sixth-row">
+    <div class="unique-photos">
+      <div class="left-column">
+        <div class="photo">
+          <img src="1sp deac.png" alt="Unique 1">
+          <img src="1sp acti.png" alt="Hover 1" class="hover-image">
+        </div>
+      </div>
+      <div class="middle-column">
+        <div class="photo">
+          <img src="2 gp deac.png" alt="Unique 2">
+          <img src="2 gp active.png" alt="Hover 2" class="hover-image">
+        </div>
+        <div class="photo">
+          <img src="3 gd deac.png" alt="Unique 3">
+          <img src="3 gd activ.png" alt="Hover 3" class="hover-image">
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="photo">
+          <img src="4 sd deac.png" alt="Unique 4">
+          <img src="4 sd active.png" alt="Hover 4" class="hover-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="seventh-row">
+    <img src="Learn More.png" alt="Learn More" class="learn-more-button">
+  </div>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="Portraits footer.png" alt="Footer Logo">
+     </div>
+     <div class="footer-actions">
+      <div class="action">
+        <img src="ico1.png" alt="Facebook">
+      </div>
+      <div class="action">
+        <img src="ico2.png" alt="Instagram">
+      </div>
+      <div class="action">
+        <img src="ico3.png" alt="Telephone Number">
+      </div>
+      <div class="action">
+        <img src="ico4.png" alt="Email">
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+$('.fa-bars').click(function(){
+  $(this).toggleClass('fa-times');
+  $('nav').toggleClass('nav-toggle');
+});
+
+$(window).on('scroll load',function(){
+  $('.fa-bars').removeClass('fa-times');
+  $('nav').removeClass('nav-toggle');
+});
+
+$('.count').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+  {
+    duration: 5000,
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum + '+');
+    }
+  });
+});
+
+$('.project').magnificPopup({
+  delegate:'a',
+  type:'image',
+  gallery:{
+    enabled:true
+  }
+});
+
+});
+  </script>
+
+
+</body>
+</html>

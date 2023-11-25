@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallerystyle.css">
+    <title>Gallery - Portraits by RAS Digital</title>
+</head>
+<body>
+
+  <!-- GALLERY -->
+  <div class="main-row">
+
+    <nav class="navbar">
+    <img src="PORTRAITS LOGO.png" alt="RAS Logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Page.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- PICTURES -->
+  <div class="full-img">
+    <style>
+      .center-image {
+        display: block;
+        margin: auto;
+      }
+    </style>
+    
+    <img src="OurGallery.png" width="300px" class="center-image">
+  </div>
+  <div class="imggallery" >
+    <div class="gallery-row">
+      <img src="solo3.jpg" alt="Image 1">
+      <img src="solo6.jpg" alt="Image 2">
+      <img src="solo7.jpg" alt="Image 3">
+      <img src="solo8.jpg" alt="Image 4">
+    </div>
+    <div class="gallery-row">
+      <img src="duo1.jpg" alt="Image 5">
+      <img src="duo4.jpg" alt="Image 6">
+      <img src="duo5.jpg" alt="Image 7">
+      <img src="duo6.jpg" alt="Image 8">
+    </div>
+
+    <div class="gallery-row">
+      <img src="trio1.jpg" alt="Image 9">
+      <img src="trio2.jpg" alt="Image 10">
+      <img src="trio3.jpg" alt="Image 11">
+      <img src="trio4.jpg" alt="Image 12">
+    </div>
+
+    <div class="gallery-row">
+      <img src="group1.jpg" alt="Image 13">
+      <img src="group2.jpg" alt="Image 14">
+      <img src="group3.jpg" alt="Image 15">
+      <img src="group4.jpg" alt="Image 16">
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="Portraits footer.png" alt="Footer Logo">
+     </div>
+     <div class="footer-actions">
+      <div class="action">
+        <img src="ico1.png" alt="Facebook">
+      </div>
+      <div class="action">
+        <img src="ico2.png" alt="Instagram">
+      </div>
+      <div class="action">
+        <img src="ico3.png" alt="Telephone Number">
+      </div>
+      <div class="action">
+        <img src="ico4.png" alt="Email">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+$('.fa-bars').click(function(){
+  $(this).toggleClass('fa-times');
+  $('nav').toggleClass('nav-toggle');
+});
+
+$(window).on('scroll load',function(){
+  $('.fa-bars').removeClass('fa-times');
+  $('nav').removeClass('nav-toggle');
+});
+
+$('.count').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+  {
+    duration: 5000,
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum + '+');
+    }
+  });
+});
+
+$('.project').magnificPopup({
+  delegate:'a',
+  type:'image',
+  gallery:{
+    enabled:true
+  }
+});
+
+});
+  </script>

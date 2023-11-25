@@ -1,0 +1,346 @@
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ .body-specifications { /* to overwrite bootstrap */
+  background: #efd5bd; 
+}
+
+
+/* header -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
+.main-row {
+  background-color: #708ca4; 
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: 'Montserrat SemiBold', sans-serif;
+}
+
+.logo {
+  width: 300px; 
+}
+
+.social-icons img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+/* end of header -----------------------------------------------------------------------------------------------------------------------------------------  */
+
+.description_services{
+  background-color: #688AA5;
+  width: 90%;
+  height: 15%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.description_services p{
+  color: white;
+  font-family: 'Montserrat SemiBold', sans-serif;
+  padding: 2%;
+  text-align: center;
+  font-size: max(1.5vw, 20px);
+}
+
+.heading{
+  font-size: max(4.5vw, 50px);
+  text-transform: uppercase;
+  text-align: center;
+  color:#224564;
+  margin:0.5rem 0;
+  padding-top: 1rem;
+  text-decoration-style: solid;
+}
+
+.wrapper {
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
+}
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 20px 0;
+  text-align: left;
+  align-items: center;
+}
+
+
+.wrapper h2{
+  font-size: max(2vw, 40px);
+  color: #224564;
+ 
+}
+
+.wrapper h3{
+  font-size: max(0.5vw, 25px);
+  color: #30587B;
+}
+
+.wrapper ul, li{
+  list-style: none;
+  color: #30587B;
+  font-size: max(0.1vw, 17px);
+}
+@media screen and (max-width: 830px) {
+.wrapper h2, h3, ul, li{
+  text-align: center;
+}
+}
+.Image_packages{
+  width: max(25vw, 300px);
+  padding: 1.2vw;
+}
+
+.Image_packages_landscape{
+  width: max(50vw, 360px);
+  padding: 1.2vw;
+}
+
+.column:first-child { 
+  margin-left: 0;
+}
+
+.column:last-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 980px) {
+
+  .columns.column {
+      margin-bottom: 5px;
+      flex-basis: 40%;
+  }
+
+  .columns .column:last-child { 
+      flex-basis: 100%; 
+      margin: 0;
+  }
+
+  .columns .column:nth-last-child(2) { 
+      margin-right: 0;
+  }
+      
+}
+
+@media screen and (max-width: 680px) {
+
+  .columns .column {
+      flex-basis: 100%;
+      margin: 0 0 5px 0;
+  }
+          
+}
+
+
+
+/* review ------------------------------------------------------------ */
+
+.review{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.review_back{
+  background-color: #30587B;
+  background-image: linear-gradient(to right, #30587B, white);
+  width: 100%;
+  height: 30%;
+  padding-top: 2vw;
+  margin-top: 4vw;
+
+}
+
+.review_des{
+  width: max(30vw, 300px);
+  padding-right: 6vw;
+}
+
+
+.review_slide{
+  width: max(23vw, 300px);
+}
+
+.review_des h1{
+  font-size: max(4.3vw, 30px);
+  text-transform: uppercase;
+  color: white;
+  margin:0.5rem 0;
+  padding-top: 1rem;
+}
+
+.review_des h2{
+  font-size: max(2.5vw, 20px);
+  color: white;
+}
+
+.review_des p{
+  font-size: max(1vw, 10px);
+  color: white;
+}
+
+.review_des h1, h2, p{
+  text-align: left;
+  margin: auto;
+  padding-left: 2%;
+  text-shadow: 1px 1px 1px #224564;
+
+
+}
+
+@media screen and (max-width: 830px) {
+  .review{
+    width: auto;
+  }
+  .review_des{
+    align-content: center;
+  }
+  .review_des h1, h2, p{
+    text-align: center;
+    margin: auto;
+    padding-left: 0;
+  }
+
+  }
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.2s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+.footer {
+  background-color: #708ca4; 
+  padding: 20px;
+  color: #fff; 
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  width: 340px; 
+  height: auto; 
+}
+
+.footer-actions {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.action {
+  margin-bottom: 5px; 
+}
+
+.action img {
+  width: 200px; 
+  height: auto; 
+}
